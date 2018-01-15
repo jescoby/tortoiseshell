@@ -18,7 +18,6 @@ header{
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
-
 }
 
 header .logo{
@@ -46,7 +45,8 @@ header nav span{
   max-width: 100%;
   background-color: cadetblue;
   color: white;
-  margin-top: 1rem;
+  position: relative;
+  top: 1rem;
 }
 
 /* HEADLINE */
