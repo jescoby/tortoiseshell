@@ -4,8 +4,12 @@ html{
   margin: 0;
 }
 
+body{
+  line-height: 1.4rem;
+}
+
 .pagecontainer{
-  margin: 0 auto;
+  margin: auto;
   width: 960px;
 }
 
@@ -30,12 +34,12 @@ header img{
   margin: auto 1rem auto 2rem;
 }
 
-header nav{
-  margin: 1rem 2rem;
+.fullmenu{
+  margin-left: 2rem;
 }
 
-header nav span{
-  margin: 1rem 2rem;
+.shortmenu{
+  display: none;
 }
 
 .bar{
@@ -47,6 +51,7 @@ header nav span{
   color: white;
   position: relative;
   top: 1rem;
+  padding: 1rem 2rem;
 }
 
 /* HEADLINE */
@@ -68,5 +73,196 @@ header nav span{
 /* FEATURES */
 
 .features{
-  border: 2px solid red;
+  display: flex;
+  justify-content: center;
+}
+
+.imagecard{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  margin: 3rem;
+  height: 8rem;
+  width: 5rem;
+}
+
+
+.imagecard .paper{
+  width: 3.5rem;
+  margin-bottom: 1rem;
+}
+
+.imagecard .ruler{
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+.truck{
+  width: 5rem;
+  margin-bottom: 1rem;
+}
+
+/* INFORMATION SECTION */
+
+.infosection{
+  display: flex;
+  justify-content: center;
+}
+
+.infocard{
+  width: 35%;
+  margin-right: 5%;
+  margin-bottom: 5rem;
+}
+
+.infobanner{
+  background-color: cadetblue;
+  font-weight: bold;
+  color: white;
+  max-width: 10rem;
+  padding: 0.5rem 1.25rem;
+}
+
+.infocard p{
+  padding: 1rem 0;
+}
+
+/* FOOTER */
+
+footer{
+  background-color: azure;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+footer img{
+  height: 1.5rem;
+  margin: 4rem 1rem 4rem 4rem;
+}
+
+/* SCREENS LESS THAN 1024 */
+
+@media only screen and (max-width: 1024px){
+
+  .pagecontainer{
+    width: 100%;
+  }
+
+  header{
+    height: 22rem;
+  }
+
+  header .bar{
+    top: 0;
+  }
+
+  .title{
+    margin-top: 5rem;
+    margin-right: 2rem;
+    float: right;
+  }
+
+  .title h1{
+    margin: 0.75rem 4rem;
+    font-size: 1.33rem;
+  }
+
+}
+
+/* SCREENS LESS THAN 800 */
+
+@media only screen and (max-width: 800px){
+
+  nav .fullmenu{
+    display: none;
+  }
+
+  nav .shortmenu{
+    display: block;
+  }
+
+}
+
+/* SCREENS LESS THAN 480 */
+
+@media only screen and (max-width: 480px){
+
+  /* HEADER */
+
+  .logo span{
+    display: none;
+  }
+
+  header{
+    height: 17rem;
+    background-position: 20%;
+  }
+
+  .title{
+    margin: 9rem 0 0 0;
+    width: 100%;
+  }
+
+  .title h1{
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1rem;
+  }
+
+  nav .fullmenu{
+    display: none;
+  }
+
+  nav .shortmenu{
+    display: block;
+  }
+
+  /* FEATURES */
+
+  .features{
+    flex-direction: column;
+    align-items: center;
+    margin: 3.77rem 0;
+  }
+
+  .imagecard{
+    margin: 0 0 1.54rem 0;
+  }
+
+  .imagecard span{
+    font-size: 0.77rem;
+  }
+
+  /* INFO SECTION */
+
+  .infosection{
+    flex-direction: column;
+  }
+
+  .infocard{
+    width: 100%;
+    margin: 0 0 4rem 0;
+  }
+
+  .infobanner{
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .infocard p{
+    font-size: 0.77rem;
+  }
+
+  /* FOOTER */
+
+  footer{
+    justify-content: center;
+  }
+
+  footer span{
+    display: none;
+  }
 }
